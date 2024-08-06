@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      'RedRose': '"Red Rose"',
+      'aleo':  '"Aleo"',
+      'lilita': '"Lilita One"'
+    }
   },
   plugins: [],
+
 }
