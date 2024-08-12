@@ -41,9 +41,9 @@ const Carousel = () => {
   };
 
   return (
-    <div>
-      <h1 className='font-RedRose pt-56 text-sky-950 text-7xl text-center mt-16 mb-28'>  Materiais Ultilizados</h1>
-        <div className="relative w-full max-w-3xl mx-auto p-10">
+    <div >
+      <h1 className='text-textColor font-RedRose pt-56 text-te text-7xl text-center mt-16 mb-28 max-[1500px]:text-6xl '>  Materiais Ultilizados</h1>
+        <div className="relative w-full  max-w-5xl mx-auto p-10  ">
           <div className="overflow-hidden relative h-64">
             {images.map((image, index) => (
               <div
@@ -54,17 +54,19 @@ const Carousel = () => {
                 <img
                   src={image}
                   alt={`Slide ${index}`}
-                  className="w-48"
+                  className="w-72 rounded-2xl max-[1500px]:w-64"
                 />
               </div>
             ))}
           </div>
-          <button onClick={prevSlide} className="font-lilita absolute top-1/2 left-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
+          <div className='flex justify-between'>
+          <button onClick={prevSlide} className="text-2xl font-lilita absolute top-1/2 left-0 transform -translate-y-1/2 bg-fundoHeader text-stone-300 p-7 rounded-2xl max-[1500px]:p-5">
             anterior
           </button>
-          <button onClick={nextSlide} className="font-lilita absolute top-1/2 right-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
+          <button onClick={nextSlide} className=" text-2xl font-lilita absolute top-1/2 right-0 transform -translate-y-1/2 bg-fundoHeader text-stone-300 p-7 rounded-2xl max-[1500px]:p-5">
             proximo
           </button>
+          </div>
         </div>
     </div>
   );

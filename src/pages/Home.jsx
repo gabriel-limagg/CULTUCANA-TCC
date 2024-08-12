@@ -6,12 +6,19 @@ import Guia from '../componentes/Guia'
 import Carousel from '../componentes/Carousel'
 import QuemSomos from '../componentes/QuemSomos'
 import Informaçoes from '../componentes/Informaçoes'
+import Header from '../componentes/Header'
 
 
 export default function Home() {
   return (
+    
     <div className=' overflow-hidden' >
-      <Body  >
+     
+      <Body>
+        <section id='header'>
+          <Header/>
+        </section>
+
         <section id='inicio'>
           <Inicio />
         </section>

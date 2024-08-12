@@ -4,10 +4,10 @@ import video from '../assets/video.svg'
 export default function () {
     return (
         <div>
-            <h1 className=' font-RedRose pt-56 text-sky-950 text-7xl text-center mt-16'>  Guia de Ultilização</h1>
+            <h1 className=' font-RedRose pt-56 text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl '>  Guia de Ultilização</h1>
             <section>
                 <div>
-                    <h1 className=' font-RedRose p-8 mt-10 text-left text-sky-950 text-6xl '>Passo 1:</h1>
+                    <h1 className=' font-RedRose p-8 mt-10 text-left text-textColor text-5xl max-[1500px]:text-4xl  '>Passo 1:</h1>
                 </div>
                 <div>
                     <img className='m-auto mt-16' src={video} alt="" />
@@ -15,7 +15,7 @@ export default function () {
                 </div>
                 <div className='flex justify-between p-14 '>
                     <div>
-                        <p className='font-lilita text-xl  text-center  text-stone-300'>Seleção do Local:</p>
+                        <p className='font-lilita text-xl  text-center  text-stone-300 '>Seleção do Local:</p>
                         <p className='font-lilita text-xl  text-center mt-8 text-stone-300'>Escolha um local central em sua plantação <br /> que receba boa  incidência solar <br /> e possua fácil acesso para <br /> monitoramento e manutenção.</p>
                     </div>
                     <div>
@@ -28,7 +28,7 @@ export default function () {
                     </div>
                 </div>
                 <div>
-                    <h1 className='font-RedRose p-8  text-left text-sky-950 text-6xl '>Passo 2:</h1>
+                    <h1 className='font-RedRose p-8  text-left text-textColor text-5xl max-[1500px]:text-4xl '>Passo 2:</h1>
                 </div>
                 <div>
                     <img className='m-auto mt-16' src={video} alt="" />
@@ -40,7 +40,7 @@ export default function () {
                     <p className='font-lilita flex justify-center  text-xl text-center mt-8 text-stone-300'> Criação de Conta: Crie uma conta no aplicativo para ter acesso a todos os recursos e  funcionalidades da plataforma Cultucana</p>
                 </div>
                 <div>
-                    <h1 className='font-RedRose p-8 mt-10 text-left text-sky-950 text-6xl '>Passo 3:</h1>
+                    <h1 className='font-RedRose p-8 mt-10 text-left text-textColor text-5xl max-[1500px]:text-4xl  '>Passo 3:</h1>
                 </div>
                 <div>
                     <img className='m-auto mt-16' src={video} alt="" />

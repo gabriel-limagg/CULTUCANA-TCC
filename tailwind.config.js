@@ -10,9 +10,12 @@ export default {
     colors: {
       sky: colors.sky,
       slate: colors.slate,
+      zinc: colors.zinc,
+      stone: colors.stone,
       'fundoHeader': '#1C400B',
       'textColor': '#8BC340',
       'white': '#fff',
+      
 
 
     },
@@ -20,7 +23,8 @@ export default {
     fontFamily:{
       'RedRose': '"Red Rose"',
       'aleo':  '"Aleo"',
-      'lilita': '"Lilita One"'
+      'lilita': '"Lilita One"',
+      'rosarivo': '"Rosarivo"'
     }
   },
   plugins: [],
