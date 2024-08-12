@@ -41,28 +41,31 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto p-10">
-      <div className="overflow-hidden relative h-64">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 w-full h-full flex justify-center items-center transition-transform duration-700 ease-in-out ${index === currentIndex ? 'translate-x-0' : 'translate-x-full'}`}
-            style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
-          >
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-48"
-            />
+    <div>
+      <h1 className='font-RedRose pt-56 text-sky-950 text-7xl text-center mt-16 mb-28'>  Materiais Ultilizados</h1>
+        <div className="relative w-full max-w-3xl mx-auto p-10">
+          <div className="overflow-hidden relative h-64">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 w-full h-full flex justify-center items-center transition-transform duration-700 ease-in-out ${index === currentIndex ? 'translate-x-0' : 'translate-x-full'}`}
+                style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
+              >
+                <img
+                  src={image}
+                  alt={`Slide ${index}`}
+                  className="w-48"
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <button onClick={prevSlide} className="font-lilita absolute top-1/2 left-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
-        anterior
-      </button>
-      <button onClick={nextSlide} className="font-lilita absolute top-1/2 right-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
-        proximo
-      </button>
+          <button onClick={prevSlide} className="font-lilita absolute top-1/2 left-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
+            anterior
+          </button>
+          <button onClick={nextSlide} className="font-lilita absolute top-1/2 right-0 transform -translate-y-1/2 bg-sky-950 text-stone-300 p-2 rounded-lg">
+            proximo
+          </button>
+        </div>
     </div>
   );
 };
