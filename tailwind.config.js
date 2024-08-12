@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,6 +7,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      sky: colors.sky,
+      slate: colors.slate,
+      'fundoHeader': '#1C400B',
+      'textColor': '#8BC340',
+
+    },
     extend: {},
     fontFamily:{
       'RedRose': '"Red Rose"',
