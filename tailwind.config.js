@@ -12,6 +12,8 @@ export default {
       slate: colors.slate,
       'fundoHeader': '#1C400B',
       'textColor': '#8BC340',
+      'white': '#fff',
+
 
     },
     extend: {},
