@@ -1,66 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css'; // Importe o CSS para a animação
+import React from 'react';
+import '../App.css'; 
 import { Link } from 'react-scroll';
-import Logo from "../assets/logo-tcc.png";
+import Header from './Header';
 
-function Header() {
-    const [showHeader, setShowHeader] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-    const [timer, setTimer] = useState(null);
-    const [isScrollingUp, setIsScrollingUp] = useState(false);
-
-    useEffect(() => {
-        let ticking = false;
-
-        const handleScroll = () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    if (window.scrollY === 0) {
-                        // No topo da página, header visível e não some
-                        setShowHeader(true);
-                        setIsScrollingUp(false);
-                        clearTimeout(timer);
-                    } else if (window.scrollY > lastScrollY) {
-                        // Rola para baixo - esconde o header
-                        setShowHeader(false);
-                        setIsScrollingUp(false);
-                        clearTimeout(timer);
-                    } else {
-                        // Rola para cima - mostra o header
-                        setShowHeader(true);
-                        setIsScrollingUp(true);
-                        // Define o timer para esconder o header após 2 segundos, apenas se estiver rolando para cima
-                        clearTimeout(timer);
-                        setTimer(setTimeout(() => {
-                            setShowHeader(false);
-                        }, 2000));
-                    }
-                    setLastScrollY(window.scrollY);
-                    ticking = false;
-                });
-
-                ticking = true;
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-            clearTimeout(timer);
-        };
-    }, [lastScrollY, timer]);
-
+function Inicio() {
     return (
-        <div>
-            <div className={`fixed top-0 left-0 w-screen bg-fundoHeader transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
-                <Link to='inicio' smooth={true} duration={500} offset={-120}>
-                    <img className='w-28 m-auto cursor-pointer' src={Logo} alt="" />
-                </Link>
+        <div> 
+            <Header/> 
+
+            <div className='text-zinc-300 text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl'>
+                <div>
+                    <Link to='apresentacao' smooth={true} duration={500} offset={160}>
+                        <h2 className='font-aleo text-stone-300 cursor-pointer'>Apresentação</h2>
+                    </Link>
+                </div>
+                <div>
+                    <Link to='guia' smooth={true} duration={500} offset={180}>
+                        <h2 className='font-aleo text-stone-300 cursor-pointer'>Guia</h2>
+                    </Link>
+                </div>
+                <div>
+                    <Link to='carrossel' smooth={true} duration={500}>
+                        <h2 className='font-aleo text-stone-300 cursor-pointer'>Materiais utilizados</h2>
+                    </Link>
+                </div>
+                <div>
+                    <h2 className='font-aleo text-stone-300 cursor-pointer'>CANAÃ</h2>
+                </div>
+                <div>
+                    <Link to='discricao' smooth={true} duration={500} offset={200}>
+                        <h2 className='font-aleo text-stone-300 cursor-pointer'>Quem somos</h2>
+                    </Link>
+                </div>
             </div>
-            <div className="mt-28"></div> {/* Ajuste a margem superior para compensar a altura do header */}
+            <h1 className='font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl '>CULTUCANA</h1>
+            <div className="cube-loader max-[1500px]:">
+                <div className="cube-top"></div>
+                <div className="cube-wrapper">
+                    {[...Array(4)].map((_, i) => (
+                        <span key={i} style={{ '--i': i }} className="cube-span"></span>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
 
-export default Header;
+export default Inicio;
