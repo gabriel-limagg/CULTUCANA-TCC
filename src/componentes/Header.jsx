@@ -55,7 +55,7 @@ function Header() {
         <div>
             <div className={`fixed top-0 left-0 w-screen bg-fundoHeader transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
                 <Link to='inicio' smooth={true} duration={500} offset={-120}>
-                    <img className='w-28 m-auto' src={Logo} alt="" />
+                    <img className='w-28 m-auto cursor-pointer' src={Logo} alt="" />
                 </Link>
             </div>
             <div className="mt-28"></div> {/* Ajuste a margem superior para compensar a altura do header */}

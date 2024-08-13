@@ -23,8 +23,7 @@ export default function () {
                     <div className=''>
                         <h1 className='font-RedRose  text-center text-textColor text-5xl  max-[1500px]:text-4xl  '>Quem somos </h1>
                         <p className='font-lilita text-xl text-center ml-0 mr-0 mt-8  text-stone-300 max-[1500px]:text-lg '>
-                            Olá Somos Juan Kaman,
-                            Gabriel Lima e Kaua Kestering, <br /> estudantes do ensino médio  e entusiastas <br /> da tecnologia.
+                            Olá Somos Gabriel Lima, Juan Kaman, e Kaua Kestering, <br /> estudantes do ensino médio  e entusiastas <br /> da tecnologia.
                             Matriculados no curso técnico <br /> de TI
                             na UNASP, buscamos  constantemente aprimorar <br /> nossas habilidades e conhecimentos na área.</p>
                     </div>

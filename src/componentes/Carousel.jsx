@@ -60,12 +60,15 @@ const Carousel = () => {
             ))}
           </div>
           <div className='flex justify-between'>
+
           <button onClick={prevSlide} className="text-2xl font-lilita absolute top-1/2 left-0 transform -translate-y-1/2 bg-fundoHeader text-stone-300 p-7 rounded-2xl max-[1500px]:p-5">
-            anterior
+            Anterior
           </button>
+
           <button onClick={nextSlide} className=" text-2xl font-lilita absolute top-1/2 right-0 transform -translate-y-1/2 bg-fundoHeader text-stone-300 p-7 rounded-2xl max-[1500px]:p-5">
-            proximo
+            Próximo
           </button>
+
           </div>
         </div>
     </div>

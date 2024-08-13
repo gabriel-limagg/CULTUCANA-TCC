@@ -4,7 +4,7 @@ import img from '../assets/img.svg'
 export default function Apresentacao() {
   return (
     <div>
-      <h1 className=' font-RedRose pt-56 text-textColor text-7xl text-center mt-16 max-[1500px]:text-5xl '>  Sistema de Monitoramento da Canavicultura</h1>
+      <h1 className=' font-RedRose pt-56 text-textColor text-7xl text-center mt-16 max-[1500px]:text-5xl '>  Sistema de Monitoramento na Canavicultura</h1>
       <section>
         <div className='flex justify-between mt-36 pl-12 pr-16 '>
           <div className='w-1/4'>
@@ -23,16 +23,22 @@ export default function Apresentacao() {
 
           <div className='w-1/4'>
             <h1 className='font-RedRose text-textColor text-5xl text-center max-[1500px]:text-4xl ' >O que Oferecemos:</h1>
-            <p className='font-lilita  text-stone-300 text-center m-0 mt-8 text-xl max-[1500px]:text-lg max-[1200px]:text-base ' >Monitoramento em Tempo Real: Tenha acesso  instantâneo aos dados  de umidade do solo, temperatura, luminosidade e mais, tudo em tempo real,  para otimizar o manejo da canavicultura. 
-              Energia Sustentável: Nosso sistema é alimentado por  um painel solar integrado, reduzindo a pegada de carbono   promovendo a sustentabilidade na produção.</p>
+            <p className='font-lilita  text-stone-300 text-center m-0 mt-8 text-xl max-[1500px]:text-lg max-[1200px]:text-base ' >Monitoramento em Tempo Real: Tenha acesso  instantâneo aos dados  de umidade do solo, temperatura e mais, tudo em tempo real,  para otimizar o manejo da canavicultura. 
+              Energia Sustentável: Nosso sistema é alimentado por  um painel solar integrado, reduzindo a captação de carbono promovendo a sustentabilidade na produção.</p>
           </div>
         </div>
         <div className='font-RedRose p-8  mt-10'>
-          <h1 className=' text-textColor text-5xl text-left max-[1500px]:text-4xl  '>Por Que Escolher Nosso Sistema:</h1>
-          <p className='font-lilita text-stone-300 text-left m-0 mt-8 text-xl max-[1500px]:text-lg max-[1200px]:text-base '>Precisão e Confiabilidade: Nossos sensores de alta qualidade garantem leituras precisas e confiáveis em todas <br /> as condições climáticas.
-            Sustentabilidade: Priorizamos a sustentabilidade em todas  as etapas do processo, desde a energia <br />g renovável até os materiais ecológicos.
-            Facilidade de Uso: Nosso sistema é projetado para ser fácil de instalar e usar, <br /> permitindo que os produtores se concentrem em maximizar sua produção de cana-de-açúcar.
+          <h1 className=' text-textColor text-5xl text-center m-10 mt-12 max-[1500px]:text-4xl  '>Por Que Escolher Nosso Sistema:</h1>
+          <p className='font-lilita text-stone-300 text-center m-10 mt-10 text-xl max-[1500px]:text-lg max-[1200px]:text-base '>Precisão e Confiabilidade: Nossos sensores de alta qualidade garantem leituras precisas e confiáveis em todas as condições climáticas. <br />
+            Sustentabilidade: Priorizamos a sustentabilidade em todas  as etapas do processo, desde a energia <br /> renovável até os materiais ecológicos. <br />
+            
           </p>
+
+          <p className='font-lilita text-stone-300 text-center m-10 mt-10 text-xl max-[1500px]:text-lg max-[1200px]:text-base '>
+            Facilidade de Uso: Nosso sistema é projetado para ser fácil de instalar e usar, permitindo que os produtores se concentrem em maximizar <br /> sua produção de cana-de-açúcar.
+          </p>
+
+        
         </div>
         <div>
           <h1 className='font-RedRose mt-10 p-8 text-textColor text-5xl text-left max-[1500px]:text-4xl   '> Veja Nosso Sistema em Ação:</h1>
@@ -47,4 +53,3 @@ export default function Apresentacao() {
     </div>
   )
 }
-
