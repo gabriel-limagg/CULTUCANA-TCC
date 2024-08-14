@@ -7,13 +7,13 @@ import Header from './Header';
 
 function Inicio() {
     return (
-        <div> {/* Adiciona padding-top para compensar a altura do header */}
-            <Header/> {/* Inclua o componente Header aqui */}
-
-            <div className='text-zinc-300 text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl'>
-                <div>
+        <div> 
+            <Header /> 
+            <div className='hidden md:block'>
+            <div className='text-zinc-300 text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl '>
+                <div className='' >
                     <Link to='apresentacao' smooth={true} duration={500} offset={160}>
-                        <h2 className='font-aleo text-stone-300 cursor-pointer'>Apresentação</h2>
+                        <h2 className='font-aleo text-stone-300 cursor-pointer '>Apresentação</h2>
                     </Link>
                 </div>
                 <div>
@@ -34,6 +34,8 @@ function Inicio() {
                         <h2 className='font-aleo text-stone-300 cursor-pointer'>Quem somos</h2>
                     </Link>
                 </div>
+                </div>
+                
             </div>
             <h1 className='font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl '>CULTUCANA</h1>
             <div className="cube-loader max-[1500px]:">
@@ -45,6 +47,7 @@ function Inicio() {
                 </div>
             </div>
         </div>
+        
     );
 }
 export default Inicio;
