@@ -37,7 +37,8 @@ function Inicio() {
                 </div>
                 
             </div>
-            <h1 className='font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl '>CULTUCANA</h1>
+            <div className='max-[426px]:mt-28 max-[426px]:top-96'>
+            <h1 className=' font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl max-[426px]:mb-96   '>CULTUCANA</h1>
             <div className="cube-loader max-[1500px]:">
                 <div className="cube-top"></div>
                 <div className="cube-wrapper">
@@ -46,6 +47,7 @@ function Inicio() {
                     ))}
                 </div>
             </div>
+        </div>
         </div>
         
     );

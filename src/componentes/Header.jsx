@@ -63,7 +63,7 @@ function Header() {
                 <Hamburguer/>
                 </div>
             </div>
-            <div className="mt-28 "></div> 
+            <div className=""></div> 
         </div>
     );
 }
