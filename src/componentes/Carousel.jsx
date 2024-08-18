@@ -23,21 +23,21 @@ const images = [
 ];
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [Atual, setAtual] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Muda a imagem a cada 3 segundos
+      setAtual((prevIndex) => (prevIndex + 1) % images.length);
+    }, 100000); 
     return () => clearInterval(interval);
   }, []);
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  const slideAnterior = () => {
+    setAtual((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  const proximoSlide = () => {
+    setAtual((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   return (
@@ -47,7 +47,7 @@ const Carousel = () => {
       </h1>
       <div className="relative w-full max-w-5xl mx-auto">
         <div className="relative overflow-hidden h-64">
-          <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${Atual * 100}%)` }}>
             {images.map((image, index) => (
               <div key={index} className="flex-shrink-0 w-full h-full flex justify-center items-center">
                 <img
@@ -60,19 +60,19 @@ const Carousel = () => {
           </div>
         </div>
         <div className="absolute inset-x-0 top-1/2 flex justify-between px-4 md:px-0">
-          <button onClick={prevSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl hidden md:block">
+          <button onClick={slideAnterior} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl hidden md:block">
             Anterior
           </button>
-          <button onClick={nextSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl hidden md:block">
+          <button onClick={proximoSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl hidden md:block">
             Próximo
           </button>
         </div>
       </div>
       <div className='flex justify-between mt-4 md:hidden'>
-        <button onClick={prevSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl">
+        <button onClick={slideAnterior} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl">
           Anterior
         </button>
-        <button onClick={nextSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl">
+        <button onClick={proximoSlide} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl">
           Próximo
         </button>
       </div>

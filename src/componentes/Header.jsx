@@ -57,13 +57,13 @@ function Header() {
         
             <div className={`justify-items-center fixed top-0 left-0 w-screen bg-fundoHeader transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'}  `}>
                 <Link to='inicio' smooth={true} duration={500} offset={-120}>
-                    <img className='w-28 m-auto justify-items-center' src={Logo} alt=""/>
+                    <img className='w-28 m-auto justify-items-cente cursor-pointer' src={Logo} alt=""/>
                 </Link>
                 <div className='md:hidden m-auto'>
                 <Hamburguer/>
                 </div>
             </div>
-            <div className=""></div> 
+            <div className="mt-28"></div> 
         </div>
     );
 }
