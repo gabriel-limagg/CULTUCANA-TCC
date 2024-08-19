@@ -44,10 +44,10 @@ export default function Apresentacao() {
           <h1 className='font-RedRose mt-10 p-8 text-textColor text-4xl md:text-5xl text-left'>Veja Nosso Sistema em Ação:</h1>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20 space-y-4 md:space-y-0 px-4 md:px-16'>
-          <img src={img} alt="" className='w-full md:w-1/4 md:mr-4 md:ml-4' />
-          <img src={img} alt="" className='w-full md:w-1/4 md:mr-4 md:ml-4' />
-          <img src={img} alt="" className='w-full md:w-1/4 md:mr-4 md:ml-4' />
+        <div className=' flex flex-col md:flex-row justify-between items-center mt-10 md:mt-20 space-y-4  px-16'>
+          <img src={img} alt="" className='  md:w-1/4 md:mr-4 md:ml-4' />
+          <img src={img} alt="" className=' md:w-1/4 md:mr-4 md:ml-4' />
+          <img src={img} alt="" className=' md:w-1/4 md:mr-4 md:ml-4' />
         </div>
       </section>
     </div>
