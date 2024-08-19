@@ -28,7 +28,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAtual((prevIndex) => (prevIndex + 1) % images.length);
-    }, 100000); 
+    }, 10000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -59,7 +59,7 @@ const Carousel = () => {
             ))}
           </div>
         </div>
-        <div className="absolute inset-x-0 top-1/2 flex justify-between px-4 md:px-0">
+        <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex justify-between px-4 md:px-0 z-10">
           <button onClick={slideAnterior} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl hidden md:block">
             Anterior
           </button>
@@ -68,7 +68,7 @@ const Carousel = () => {
           </button>
         </div>
       </div>
-      <div className='flex justify-between mt-4 md:hidden'>
+      <div className='flex justify-between mt-4 md:hidden z-10'>
         <button onClick={slideAnterior} className="text-2xl font-lilita bg-fundoHeader text-stone-300 p-4 rounded-2xl">
           Anterior
         </button>
@@ -81,3 +81,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+

@@ -10,8 +10,8 @@ function Inicio() {
         <div> 
             <Header /> 
             <div className='hidden md:block'>
-            <div className='text-zinc-300 text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl '>
-                <div className='' >
+            <div className=' text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl '>
+                <div >
                     <Link to='apresentacao' smooth={true} duration={500} offset={160}>
                         <h2 className='font-aleo text-stone-300 cursor-pointer '>Apresentação</h2>
                     </Link>
@@ -38,7 +38,7 @@ function Inicio() {
                 
             </div>
             <div className='max-[426px]:mt-28 max-[426px]:top-96'>
-            <h1 className=' font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl max-[426px]:mb-96   '>CULTUCANA</h1>
+            <h1 className=' font-RedRose text-textColor text-7xl text-center mt-16 max-[1500px]:text-6xl max-[426px]:mb-96 max-[426px]:text-5xl   '>CULTUCANA</h1>
             <div className="cube-loader max-[1500px]:">
                 <div className="cube-top"></div>
                 <div className="cube-wrapper">

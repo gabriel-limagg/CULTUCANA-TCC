@@ -5,7 +5,7 @@ export default function Apresentacao() {
   return (
     <div className='px-4 md:px-8'>
       <h1 className='font-RedRose pt-20 md:pt-56 text-textColor text-4xl md:text-7xl text-center mt-8 md:mt-16'>
-        Sistema de Monitoramento na Canavicultura
+        Sistema de Monitoramento na Canavicultura 
       </h1>
       <section>
         <div className='flex flex-col md:flex-row justify-between mt-20 md:mt-36 space-y-12 md:space-y-0 md:space-x-8'>
@@ -15,7 +15,7 @@ export default function Apresentacao() {
               Somos uma equipe dedicada à inovação e sustentabilidade na canavicultura. Nosso sistema de monitoramento utiliza tecnologia de ponta para fornecer dados precisos e promover práticas agrícolas mais eficientes e sustentáveis em São Paulo.
             </p>
           </div>
-
+          
           <div className='md:w-1/4 text-center'>
             <h1 className='font-RedRose text-textColor text-4xl md:text-5xl'>Nossa Missão:</h1>
             <p className='font-lilita text-lg md:text-xl mt-4 md:mt-8 text-stone-300'>

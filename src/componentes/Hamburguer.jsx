@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import menu from '../assets/menu.png';
+import menu from '../assets/menu.svg';
 import { Link } from 'react-scroll';
+import Grama from "../assets/Grama.svg"
 
 export default function Hamburguer() {
   const [aberto, setAberto] = useState(false);
@@ -28,7 +29,7 @@ export default function Hamburguer() {
   return (
     <div className='fixed'>
       <img
-        className='w-16 -mt-16 cursor-pointer'
+        className='w-14 ml-5 -mt-16 cursor-pointer'
         src={menu}
         alt="Menu"
         onClick={Menu}
@@ -39,37 +40,39 @@ export default function Hamburguer() {
         onClick={Menu}
       />
 
-      <div
+      <div style={{ backgroundImage: `url(${Grama})`, backgroundSize: 'auto', backgroundPosition: 'center'  }}
         ref={menuRef}
-        className={`fixed top-0 left-0 bg-slate-200 transition-transform duration-300 ${aberto ? 'translate-x-0' : '-translate-x-full'} h-screen absolute `}
+        className={`fixed top-0 left-0 bg-white transition-transform duration-300 ${aberto ? 'translate-x-0' : '-translate-x-full'} h-screen absolute p-5 `}
       >
-        <div className='p-8'>
-          <h2 className='font-bold'>Menu</h2>
-          <div>
+        <div >
+          <h1 className='font-bold  mt-0 text-2xl font-RedRose text-center ' >Menu</h1>
+          <hr className='p-'/>
+          <div className='bg-zinc-400 rounded-lg'>
             <Link to='apresentacao' smooth={true} duration={500} offset={160}>
-              <h2 className='font-aleo text-slate-950 cursor-pointer'>Apresentação</h2>
+              <h2 className='font-RedRose text-slate-950 cursor-pointer text-center mt-6 mb-10 m-4 '>Apresentação</h2>
             </Link>
           </div>
-          <div>
+          <div className='bg-zinc-400 rounded-lg'>
             <Link to='guia' smooth={true} duration={500} offset={180}>
-              <h2 className='font-aleo text-slate-950 cursor-pointer'>Guia</h2>
+              <h2 className='font-RedRose text-slate-950 cursor-pointer text-center mb-10'>Guia</h2>
             </Link>
           </div>
-          <div>
+          <div className='bg-zinc-400 rounded-lg' >
             <Link to='carrossel' smooth={true} duration={500}>
-              <h2 className='font-aleo text-slate-950 cursor-pointer'>Materiais utilizados</h2>
+              <h2 className='font-RedRose text-slate-950 cursor-pointer text-center mb-10'>Materiais</h2>
             </Link>
           </div>
-          <div>
-            <h2 className='font-aleo text-slate-950 cursor-pointer'>CANAÃ</h2>
+          <div className='bg-zinc-400 rounded-lg'>
+            <h2 className='font-RedRose text-slate-950 cursor-pointer text-center mb-10 '>CANAÃ</h2>
           </div>
-          <div>
+          <div className='bg-zinc-400 rounded-lg'>
             <Link to='discricao' smooth={true} duration={500} offset={200}>
-              <h2 className='font-aleo text-slate-950 cursor-pointer'>Quem somos</h2>
+              <h2 className='font-RedRose text-slate-950 cursor-pointer text-center mb-5 '>Quem somos</h2>
             </Link>
           </div>
         </div>
       </div>
+     
     </div>
   );
 }
