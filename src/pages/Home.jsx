@@ -22,23 +22,6 @@ export default function Home() {
         <section id='inicio'>
           <Inicio />
         </section>
-
-        <section id='apresentacao'>
-          <Apresentacao />
-        </section>
-
-        <section id='guia'>
-          <Guia />
-        </section>
-
-        <section id='carrossel'>
-          <Carousel />
-        </section>
-
-        <section id='discricao'>
-          <QuemSomos />
-        </section>
-
         <Informaçoes />
       </Body>
     </div>

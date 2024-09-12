@@ -3,6 +3,7 @@ import img from '../assets/img.svg'
 
 export default function Apresentacao() {
   return (
+   
     <div className='px-4 md:px-8'>
       <h1 className='font-RedRose pt-20 md:pt-56 text-textColor text-4xl md:text-7xl text-center mt-8 md:mt-16'>
         Sistema de Monitoramento na Canavicultura 
