@@ -1,18 +1,17 @@
 import React from 'react';
 import '../App.css'; 
 import { Link } from 'react-router-dom';
-import Header from './Header';
+
 
 
 
 
 function Inicio() {
     return (
-        <div > 
+        <div className='h-screen ' > 
             
-            <Header /> 
             <div className='hidden md:block'>
-            <div className=' text-3xl grid grid-cols-5 gap-4 place-items-center p-6 max-[1500px]:text-2xl max-[1200px]:text-xl '>
+            <div className=' text-3xl grid grid-cols-5 gap-4 place-items-center   max-[1500px]:text-2xl max-[1200px]:text-xl '>
                 <div >
                     <Link to='apresentacao' >
                         <h2 className='font-aleo text-stone-300 cursor-pointer '>Apresentação</h2>

@@ -22,7 +22,7 @@ export default function Home() {
         <section id='inicio'>
           <Inicio />
         </section>
-        <Informaçoes />
+        
       </Body>
     </div>
   )
