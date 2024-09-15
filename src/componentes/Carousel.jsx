@@ -41,8 +41,8 @@ const Carousel = () => {
   };
 
   return (
-    <div className='px-4 md:px-8'>
-      <h1 className='text-textColor font-RedRose pt-20 md:pt-56 text-4xl md:text-7xl text-center mt-8 md:mt-16 mb-28'>
+    <div className='px-4 md:px-8 h-screen'>
+      <h1 className='text-textColor font-RedRose pt-20 md:pt-56 text-4xl md:text-7xl text-center mt-8 md:-mt-40 mb-20'>
         Materiais Utilizados
       </h1>
       <div className="relative w-full max-w-5xl mx-auto">

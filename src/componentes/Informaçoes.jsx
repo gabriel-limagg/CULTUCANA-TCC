@@ -6,7 +6,7 @@ import whatsap from '../assets/whatsapp.png'
 export default function () {
   return (
     <div className='bg-slate-950 '>
-       <div className='m-auto p-6  flex justify-center'>
+       <div className='m-auto p-6 left-52   flex justify-center'>
         <div className='p-4 w-20 items-start'>
            <a href="https://www.instagram.com/gab.lima_?igsh=MXFjMnowbHhoeGRmNw=="> < img src={instagram} alt="" /></a>
         </div>
