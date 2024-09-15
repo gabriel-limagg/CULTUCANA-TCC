@@ -16,26 +16,26 @@ import Final from './pages/Final';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/apresentacao",
-    element: <Apresentaçao/>
+    element: <Apresentaçao />,
   },
   {
-    path: "/guia de ultilizaçao",
-    element: <Ultilização/>
+    path: "/guia-de-utilizacao",
+    element: <Ultilização />,
   },
   {
     path: "/materiais",
-    element: <Materiais/>
+    element: <Materiais />,
   },
   {
-    path: "/quem somos",
-    element: <Final/>
+    path: "/quem-somos",
+    element: <Final />,
   }
-
 ]);
+
 
 export default function App() {
   return (

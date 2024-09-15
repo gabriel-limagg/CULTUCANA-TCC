@@ -11,12 +11,11 @@ export default function Home() {
     <div className=' overflow-hidden' >
      
       <Body>
-        <section id='header'>
+        <section >
           <Header/>
-       
         </section>
 
-        <section id='inicio'>
+        <section >
         <Inicio />
         </section>
         
