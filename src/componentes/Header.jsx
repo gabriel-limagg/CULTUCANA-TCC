@@ -40,7 +40,9 @@ function Header() {
     </Link>
   </div>
   <div>
+    <Link to="/canaa">
     <h2 className='font-aleo text-stone-300 cursor-pointer'>CANAÃ</h2>
+    </Link>
   </div>
   <div>
     <Link to='/quem-somos'>

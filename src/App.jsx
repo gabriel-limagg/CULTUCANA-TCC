@@ -8,6 +8,7 @@ import Apresentaçao from './pages/Apresentaçao';
 import Ultilização from './pages/Ultilização';
 import Materiais from './pages/Materiais';
 import Final from './pages/Final';
+import ChatbotCanaa from './componentes/ChatbotCanaa';
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/quem-somos",
     element: <Final />,
+  },
+  {
+    path: "/canaa",
+    element: <ChatbotCanaa/>
   }
 ]);
 
